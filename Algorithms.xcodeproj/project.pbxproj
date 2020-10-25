@@ -16,6 +16,8 @@
 		7A021E792543FB9400EF1E75 /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A021E782543FB9400EF1E75 /* AlgorithmsTests.swift */; };
 		7A021E972543FBB800EF1E75 /* TwoSums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A021E962543FBB800EF1E75 /* TwoSums.swift */; };
 		7A021E9F2543FBCC00EF1E75 /* TwoSumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A021E9E2543FBCC00EF1E75 /* TwoSumsTests.swift */; };
+		7A845CA12546197100CA32E7 /* ReverseIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A845CA02546197100CA32E7 /* ReverseIntegerTests.swift */; };
+		7A845CA52546198000CA32E7 /* ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A845CA42546198000CA32E7 /* ReverseInteger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		7A021E7A2543FB9400EF1E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A021E962543FBB800EF1E75 /* TwoSums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSums.swift; sourceTree = "<group>"; };
 		7A021E9E2543FBCC00EF1E75 /* TwoSumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumsTests.swift; sourceTree = "<group>"; };
+		7A845CA02546197100CA32E7 /* ReverseIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseIntegerTests.swift; sourceTree = "<group>"; };
+		7A845CA42546198000CA32E7 /* ReverseInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInteger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7A021E962543FBB800EF1E75 /* TwoSums.swift */,
+				7A845CA42546198000CA32E7 /* ReverseInteger.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7A021E9E2543FBCC00EF1E75 /* TwoSumsTests.swift */,
+				7A845CA02546197100CA32E7 /* ReverseIntegerTests.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				7A021E662543FB9300EF1E75 /* ViewController.swift in Sources */,
 				7A021E622543FB9300EF1E75 /* AppDelegate.swift in Sources */,
 				7A021E972543FBB800EF1E75 /* TwoSums.swift in Sources */,
+				7A845CA52546198000CA32E7 /* ReverseInteger.swift in Sources */,
 				7A021E642543FB9300EF1E75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A021E9F2543FBCC00EF1E75 /* TwoSumsTests.swift in Sources */,
+				7A845CA12546197100CA32E7 /* ReverseIntegerTests.swift in Sources */,
 				7A021E792543FB9400EF1E75 /* AlgorithmsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

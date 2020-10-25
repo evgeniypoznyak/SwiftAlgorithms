@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Solution {
+class TwoSums {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 
         guard nums.count > 0 else {return []}
