@@ -19,9 +19,13 @@ class TwoSumsTests: XCTestCase {
     }
 
     func testShouldReturn0and1() throws {
-        // [InlineData(new[] {2, 7, 11, 15}, 9, new[] {0, 1})]
        let sut = Solution().twoSum([2, 7, 11, 15], 9)
         XCTAssertEqual(sut, [0, 1], "Should twoSum return [0, 1]")
+    }
+
+    func testShouldReturn1and2() throws {
+       let sut = Solution().twoSum([3, 2, 4], 6)
+        XCTAssertEqual(sut, [1, 2], "Should twoSum return [1, 2]")
     }
 
     func testPerformanceExample() throws {
