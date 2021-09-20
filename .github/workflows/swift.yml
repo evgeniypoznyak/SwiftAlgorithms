@@ -1,13 +1,23 @@
-name: tests
-on: [push, pull_request]
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
-  macos:
-    name: MacOS
+  test:
+    name: Test
     runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS:14.4,name=iPhone 12 Pro Max', ]
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - name: Build
-      run: swift build -v
-    - name: Test
-      run: swift test -v -c release
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Build and test
+        run: |
+          xcodebuild clean test -project Algorithms.xcodeproj -scheme Algorithms -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+          destination: ${{ matrix.destination }}
