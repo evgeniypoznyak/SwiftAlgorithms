@@ -15,7 +15,6 @@ jobs:
         uses: actions/checkout@master
       - name: Build and test
         run: |
-          xcodebuild clean test -project Algorithms.xcodeproj -scheme Algorithms -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          bash <(curl -s https://codecov.io/bash)
+          xcodebuild clean test -project Algorithms.xcodeproj -scheme Algorithms CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
           destination: ${{ matrix.destination }}
