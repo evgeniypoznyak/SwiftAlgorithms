@@ -10,9 +10,6 @@ jobs:
   test:
     name: Test
     runs-on: macOS-latest
-    strategy:
-      matrix:
-        destination: ['platform:iOS Simulator, id:2B687EA3-12C4-4E51-A7B6-FEEBE2F39915, OS:14.4, name:iPhone 12 Pro Max']
     steps:
       - name: Checkout
         uses: actions/checkout@master
